@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Learn & Earn Online – A Program Made Only for Girls & Women</title>
+<meta name="description" content="Students, homemakers and working women: learn simple online skills from your phone and build your own income. Free guidance call within 24 hours. Girls & women only.">
+<meta name="theme-color" content="#231A5C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1129386950045958');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1129386950045958&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+:root{
+  --indigo:#231A5C; --indigo2:#352A82; --coral:#FF6B6B; --coral-d:#E84F52; --mint:#7AE0C3; --mint-d:#1E9E82;
+  --bg:#F6F4FF; --lav:#E9E4FF; --text:#2A2350; --muted:#6F6A95; --line:#E1DCF5; --sun:#FFD166;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;color:var(--text);background:var(--bg);line-height:1.65;overflow-x:hidden}
+h1,h2,h3{font-family:'Sora',sans-serif;line-height:1.18;color:var(--indigo);letter-spacing:-.015em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:62px 0}
+h2{font-size:clamp(1.6rem,4vw,2.25rem);margin-bottom:12px}
+.lead{color:var(--muted);max-width:620px;font-size:1.05rem}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--coral);color:#fff;font:800 1.02rem 'Manrope',sans-serif;border:0;border-radius:14px;padding:15px 28px;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;box-shadow:0 10px 24px rgba(255,107,107,.38)}
+.btn:hover{transform:translateY(-2px);background:var(--coral-d);box-shadow:0 14px 30px rgba(255,107,107,.5)}
+.btn:disabled{opacity:.6;cursor:wait;transform:none}
+.btn-sm{padding:10px 18px;font-size:.92rem;box-shadow:none}
+.btn-ghost{background:transparent;color:var(--indigo);border:2px solid var(--indigo);box-shadow:none;padding:11px 20px;font-size:.95rem}
+.btn-ghost:hover{background:var(--indigo);color:#fff;box-shadow:none}
+.note{font-size:.86rem;color:var(--muted);margin-top:10px}
+
+.nav{position:sticky;top:0;z-index:50;background:rgba(35,26,92,.97);backdrop-filter:blur(8px)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
+.logo{font:800 1.15rem 'Sora',sans-serif;color:#fff}
+.logo span{color:var(--mint)}
+
+.hero{background:var(--indigo);color:#fff;padding:46px 0 72px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;left:-140px;bottom:-160px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(122,224,195,.22),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;position:relative;z-index:1}
+.pill{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#E6E1FF;border-radius:99px;padding:7px 16px;font-size:.88rem;font-weight:700;margin-bottom:18px}
+.hero h1{color:#fff;font-size:clamp(2rem,5.1vw,3.3rem);font-weight:800;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--mint)}
+.hero p.sub{color:#D5CFF5;font-size:1.1rem;max-width:520px;margin-bottom:26px}
+.ticks{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:.92rem;color:#D5CFF5;font-weight:600}
+.ticks span::before{content:"✓ ";color:var(--mint);font-weight:800}
+
+.gfx{position:relative;max-width:400px;margin:0 auto;width:100%}
+.gfx svg{width:100%;height:auto;display:block}
+.chip{position:absolute;background:#fff;color:var(--indigo);font-weight:800;font-size:.8rem;padding:8px 13px;border-radius:99px;box-shadow:0 10px 24px rgba(0,0,0,.25);white-space:nowrap;animation:float 5s ease-in-out infinite}
+.c1{left:-4px;top:6%}.c2{right:-4px;top:44%;animation-delay:1.2s}.c3{left:14%;bottom:-6px;animation-delay:2.2s}
+@keyframes float{50%{transform:translateY(-8px)}}
+
+.grid{display:grid;gap:16px;margin-top:28px}
+.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
+.card .em{width:48px;height:48px;border-radius:14px;background:var(--lav);display:grid;place-items:center;font-size:1.4rem;margin-bottom:12px}
+.card h3{font-size:1.1rem;margin-bottom:6px}.card p{color:var(--muted);font-size:.96rem}
+
+.who .card{display:flex;flex-direction:column;border-top:5px solid var(--coral)}
+.who .card:nth-child(2){border-top-color:var(--mint-d)}.who .card:nth-child(3){border-top-color:var(--indigo2)}
+.who .card p{flex:1;margin-bottom:16px}
+
+.only{background:var(--lav)}
+.only .box{background:#fff;border-radius:24px;padding:30px;display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;border:2px solid var(--indigo)}
+.only .big{font-size:3rem;line-height:1}
+.only h2{margin-bottom:8px}
+
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.step{background:#fff;border-radius:20px;padding:24px;border:1px solid var(--line)}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--indigo);color:#fff;font:800 1.05rem 'Sora',sans-serif;margin-bottom:12px}
+.step h3{font-size:1.06rem;margin-bottom:4px}.step p{color:var(--muted);font-size:.95rem}
+
+.promise{background:var(--indigo);color:#fff;border-radius:24px;padding:30px;margin-top:28px}
+.promise p{color:#D5CFF5}
+.promise ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;margin-top:14px}
+.promise li::before{content:"✓ ";color:var(--mint);font-weight:800}
+
+details{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:10px}
+summary{cursor:pointer;padding:16px 20px;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:10px;color:var(--indigo)}
+summary::after{content:"+";color:var(--coral);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 20px 16px;color:var(--muted)}
+
+.cta{background:linear-gradient(135deg,var(--indigo),var(--indigo2));text-align:center}
+.cta h2{color:#fff}.cta p{color:#D5CFF5;margin:0 auto 24px;max-width:520px}
+footer{background:#150F3A;color:#A9A2D6;padding:30px 0;font-size:.85rem;text-align:center}
+footer button{color:#E6E1FF;cursor:pointer;text-decoration:underline;background:none;border:0;font:inherit}
+footer p{max-width:760px;margin:10px auto 0}
+
+.ov{position:fixed;inset:0;background:rgba(21,15,58,.76);backdrop-filter:blur(5px);display:none;align-items:center;justify-content:center;z-index:100;padding:16px}
+.ov.show{display:flex}
+.modal{background:#fff;border-radius:22px;width:100%;max-width:440px;max-height:90vh;overflow:auto;padding:28px;position:relative;animation:pop .3s ease}
+@keyframes pop{from{opacity:0;transform:scale(.94) translateY(10px)}to{opacity:1;transform:none}}
+.x{position:absolute;right:14px;top:10px;background:none;border:0;font-size:1.7rem;cursor:pointer;color:var(--muted);line-height:1}
+.modal h2{font-size:1.4rem;margin-bottom:4px}
+label{display:block;font-weight:800;font-size:.88rem;margin:11px 0 4px;color:var(--indigo)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.two>div{min-width:0}
+.two label{margin-top:11px}
+input,select{width:100%;padding:11px 13px;border:1.5px solid var(--line);border-radius:12px;font:inherit;font-size:.95rem;background:var(--bg)}
+input:focus,select:focus{outline:none;border-color:var(--indigo2);box-shadow:0 0 0 3px rgba(53,42,130,.16)}
+.err{color:#C0392B;font-size:.86rem;margin-top:10px;display:none}
+.thanks{text-align:center}
+.tick{width:74px;height:74px;border-radius:50%;background:var(--mint-d);color:#fff;font-size:2.2rem;display:grid;place-items:center;margin:0 auto 14px}
+.thanks ul{list-style:none;text-align:left;background:var(--bg);border-radius:14px;padding:14px 18px;margin:16px 0;font-size:.95rem}
+.thanks li{margin:6px 0}
+.pp h3{font-family:'Manrope',sans-serif;font-size:1rem;margin:14px 0 4px}.pp p,.pp li{font-size:.92rem;color:var(--muted)}.pp ul{padding-left:18px}
+
+@media(max-width:520px){.modal{padding:20px 18px}.modal h2{font-size:1.25rem}.btn{padding:14px 22px}}
+@media(max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}.gfx{max-width:330px}
+  .g3,.g4,.steps{grid-template-columns:1fr}.promise ul{grid-template-columns:1fr}
+  .only .box{grid-template-columns:1fr;text-align:center}
+  section{padding:46px 0}.btn.full-m{width:100%}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <div class="logo">Her<span>Circle</span> Academy</div>
+  <button class="btn btn-sm open-form" data-source="Navbar">Book free call</button>
+</div></header>
+
+<!-- HERO -->
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="pill">💜 For girls &amp; women only</div>
+    <h1>Learn online skills. Build <em>your own income.</em></h1>
+    <p class="sub">A program made only for girls and women: students, homemakers and working professionals. Start from your phone, at your own pace, with guidance at every step.</p>
+    <button class="btn full-m open-form" data-source="Hero">Book My Free Guidance Call</button>
+    <p class="note" style="color:#B9B1E6">Takes 1 minute. An expert will call you within 24 hours.</p>
+    <div class="ticks"><span>Girls &amp; women only</span><span>No experience needed</span><span>Phone is enough</span></div>
+  </div>
+  <div class="gfx" aria-hidden="true">
+    <svg viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="200" cy="190" r="160" fill="#352A82"/>
+      <circle cx="330" cy="60" r="28" fill="#FFD166"/>
+      <circle cx="52" cy="110" r="14" fill="#7AE0C3"/>
+      <!-- left: student -->
+      <g transform="translate(14 120)">
+        <circle cx="62" cy="110" r="62" fill="#FF6B6B"/>
+        <clipPath id="a"><circle cx="62" cy="110" r="62"/></clipPath>
+        <g clip-path="url(#a)">
+          <path d="M8 190 Q62 110 116 190Z" fill="#FFD166"/>
+          <rect x="52" y="108" width="20" height="18" rx="7" fill="#F2C4A8"/>
+          <path d="M30 78 Q28 40 62 38 Q96 40 94 78 L96 120 Q62 104 28 120Z" fill="#2B1B3D"/>
+          <ellipse cx="62" cy="82" rx="23" ry="27" fill="#F2C4A8"/>
+          <path d="M39 74 Q62 50 85 74 Q62 62 39 74Z" fill="#2B1B3D"/>
+          <circle cx="54" cy="84" r="2.3" fill="#2B1B3D"/><circle cx="70" cy="84" r="2.3" fill="#2B1B3D"/>
+          <path d="M54 95 Q62 101 70 95" stroke="#C0392B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <rect x="34" y="130" width="40" height="30" rx="4" fill="#fff" transform="rotate(-10 54 145)"/>
+          <rect x="38" y="134" width="32" height="4" rx="2" fill="#FF6B6B" transform="rotate(-10 54 145)"/>
+        </g>
+      </g>
+      <!-- right: professional -->
+      <g transform="translate(262 120)">
+        <circle cx="62" cy="110" r="62" fill="#7AE0C3"/>
+        <clipPath id="b"><circle cx="62" cy="110" r="62"/></clipPath>
+        <g clip-path="url(#b)">
+          <path d="M6 190 Q62 108 118 190Z" fill="#231A5C"/>
+          <path d="M50 124 L62 150 L74 124Z" fill="#fff"/>
+          <rect x="52" y="108" width="20" height="18" rx="7" fill="#C98F6B"/>
+          <path d="M34 70 Q36 38 62 38 Q90 38 90 72 L88 96 Q62 86 36 96Z" fill="#1B1230"/>
+          <ellipse cx="62" cy="80" rx="22" ry="26" fill="#C98F6B"/>
+          <path d="M40 70 Q62 48 84 70 Q62 60 40 70Z" fill="#1B1230"/>
+          <circle cx="54" cy="82" r="2.3" fill="#1B1230"/><circle cx="70" cy="82" r="2.3" fill="#1B1230"/>
+          <path d="M54 93 Q62 99 70 93" stroke="#9C2E4A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </g>
+      </g>
+      <!-- center: homemaker (front) -->
+      <g transform="translate(138 70)">
+        <circle cx="62" cy="110" r="70" fill="#FFD166" stroke="#352A82" stroke-width="6"/>
+        <clipPath id="c"><circle cx="62" cy="110" r="70"/></clipPath>
+        <g clip-path="url(#c)">
+          <path d="M-4 200 Q62 108 128 200Z" fill="#E84F52"/>
+          <path d="M20 150 Q60 130 104 150 L104 200 L20 200Z" fill="#FF8E8E" opacity=".55"/>
+          <rect x="51" y="108" width="22" height="20" rx="8" fill="#F2C4A8"/>
+          <circle cx="62" cy="52" r="15" fill="#2B1B3D"/>
+          <circle cx="62" cy="80" r="36" fill="#2B1B3D"/>
+          <ellipse cx="62" cy="88" rx="26" ry="30" fill="#F2C4A8"/>
+          <path d="M36 80 Q62 52 88 80 Q62 68 36 80Z" fill="#2B1B3D"/>
+          <circle cx="62" cy="73" r="3" fill="#E84F52"/>
+          <circle cx="53" cy="90" r="2.5" fill="#2B1B3D"/><circle cx="71" cy="90" r="2.5" fill="#2B1B3D"/>
+          <path d="M53 102 Q62 109 71 102" stroke="#C0392B" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+        </g>
+      </g>
+      <!-- phone -->
+      <g transform="rotate(-6 200 300)">
+        <rect x="170" y="262" width="60" height="84" rx="10" fill="#150F3A"/>
+        <rect x="175" y="270" width="50" height="66" rx="6" fill="#fff"/>
+        <polyline points="181,324 192,310 202,316 218,284" fill="none" stroke="#1E9E82" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </svg>
+    <span class="chip c1">🎓 Students</span>
+    <span class="chip c2">💼 Professionals</span>
+    <span class="chip c3">🏡 Homemakers</span>
+  </div>
+</div></section>
+
+<!-- WHO -->
+<section class="who"><div class="wrap">
+  <h2>Different lives. One goal.</h2>
+  <p class="lead">Whatever your day looks like, there's a way to add an income that is yours. Pick the one that sounds like you.</p>
+  <div class="grid g3">
+    <div class="card"><div class="em">🎓</div><h3>I'm a student</h3><p>Learn a real skill alongside your studies, earn your own pocket money and get ahead of the crowd.</p><button class="btn btn-ghost open-form" data-source="Card Student" data-profile="Student">This is me</button></div>
+    <div class="card"><div class="em">🏡</div><h3>I'm a homemaker</h3><p>Use your free hours at home to build something of your own, without disturbing your routine.</p><button class="btn btn-ghost open-form" data-source="Card Homemaker" data-profile="Homemaker">This is me</button></div>
+    <div class="card"><div class="em">💼</div><h3>I'm a working professional</h3><p>Add a second income stream next to your job, in the hours after work, without quitting.</p><button class="btn btn-ghost open-form" data-source="Card Professional" data-profile="Professional">This is me</button></div>
+  </div>
+</div></section>
+
+<!-- GIRLS ONLY -->
+<section class="only"><div class="wrap">
+  <div class="box">
+    <div class="big">💜</div>
+    <div>
+      <h2>Why girls &amp; women only?</h2>
+      <p class="lead" style="max-width:none">Because learning feels easier when you're among people who understand your schedule, your questions and your pace. This program is open to girls and women, so you can ask freely and grow comfortably.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- BENEFITS -->
+<section><div class="wrap">
+  <h2>What you get</h2>
+  <div class="grid g4">
+    <div class="card"><div class="em">📱</div><h3>Phone-first learning</h3><p>No laptop or costly setup. Start with the phone you already have.</p></div>
+    <div class="card"><div class="em">⏰</div><h3>Flexible timing</h3><p>Study hours, school pick-up or office time: you choose the slot.</p></div>
+    <div class="card"><div class="em">🧭</div><h3>Clear guidance</h3><p>Step-by-step direction, so you don't waste months guessing.</p></div>
+    <div class="card"><div class="em">🤝</div><h3>Friendly support</h3><p>Ask questions and get honest answers from people who respond.</p></div>
+  </div>
+</div></section>
+
+<!-- STEPS -->
+<section style="background:#fff"><div class="wrap">
+  <h2>How it begins</h2>
+  <p class="lead">One small step. Everything after that is your choice.</p>
+  <div class="steps">
+    <div class="step"><h3>Fill the form</h3><p>Your name, number and a few simple details. Under a minute.</p></div>
+    <div class="step"><h3>Get a call</h3><p>Within 24 hours our team calls to understand your goals and time.</p></div>
+    <div class="step"><h3>See your path</h3><p>We explain which skills fit you as a student, homemaker or professional.</p></div>
+    <div class="step"><h3>Decide freely</h3><p>Think it over, talk to family if you wish. No pressure.</p></div>
+  </div>
+  <div style="margin-top:28px"><button class="btn open-form" data-source="Steps">Book My Free Call</button></div>
+</div></section>
+
+<!-- PROMISE -->
+<section><div class="wrap">
+  <h2>Our promise to you</h2>
+  <div class="promise">
+    <p>Honest and respectful. We don't promise overnight riches. Here is what you can count on:</p>
+    <ul>
+      <li>A calm conversation with no pressure</li>
+      <li>Simple language, no jargon</li>
+      <li>Your studies, home or job come first</li>
+      <li>We say clearly what is and isn't possible</li>
+      <li>Your details stay private</li>
+      <li>Results depend on your effort and consistency</li>
+    </ul>
+  </div>
+</div></section>
+
+<!-- FAQ -->
+<section style="background:#fff"><div class="wrap" style="max-width:780px">
+  <h2>Questions you may have</h2>
+  <div style="margin-top:22px">
+    <details open><summary>Who can join?</summary><p>Girls and women aged 18 and above: students, homemakers and working professionals.</p></details>
+    <details><summary>I have no experience. Is that okay?</summary><p>Yes. It's made for beginners. If you can use WhatsApp, YouTube or Instagram, you can begin.</p></details>
+    <details><summary>Do I need a laptop?</summary><p>No. A smartphone with internet is enough to start.</p></details>
+    <details><summary>How much time will it need?</summary><p>1–2 hours a day is a good start, in whichever slot suits you.</p></details>
+    <details><summary>Is the first call really free?</summary><p>Yes. The guidance call is free and there's no obligation to continue.</p></details>
+    <details><summary>How much can I earn?</summary><p>It depends on your time, effort and skills. We can't guarantee any fixed income, and we'll always be upfront about it.</p></details>
+  </div>
+</div></section>
+
+<!-- FINAL CTA -->
+<section class="cta"><div class="wrap">
+  <h2>Your skills. Your time. Your income.</h2>
+  <p>Take the first small step today. Fill the form and we'll call you within 24 hours.</p>
+  <button class="btn full-m open-form" data-source="Final CTA">Book My Free Guidance Call</button>
+</div></section>
+
+<footer><div class="wrap">
+  <div>© 2025 HerCircle Academy · <button type="button" id="openPrivacy">Privacy Policy</button></div>
+  <p>Disclaimer: Information on this page is for education and guidance only. Income depends on individual effort, skills and time, and no result is guaranteed. This page is not part of, or endorsed by, Meta (Facebook/Instagram).</p>
+</div></footer>
+
+<!-- FORM MODAL -->
+<div class="ov" id="formOv" role="dialog" aria-modal="true" aria-labelledby="fTitle">
+  <div class="modal">
+    <button class="x" data-close aria-label="Close">×</button>
+    <h2 id="fTitle">Book Your Free Call 💜</h2>
+    <p class="note" style="margin:0">For girls &amp; women. Takes 1 minute.</p>
+    <form id="leadForm" novalidate>
+      <label for="f_name">Your name</label>
+      <input id="f_name" autocomplete="name" placeholder="Full name">
+      <label for="f_phone">WhatsApp / Mobile number</label>
+      <input id="f_phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="10-digit number">
+      <div class="two">
+        <div><label for="f_age">Age</label>
+          <input id="f_age" type="number" inputmode="numeric" min="18" max="65" placeholder="18+"></div>
+        <div><label for="f_job">I am a</label>
+          <select id="f_job"><option value="">Select</option><option>Student</option><option>Homemaker</option><option>Professional</option><option>Other</option></select></div>
+      </div>
+      <label for="f_time">How much time can you give daily?</label>
+      <select id="f_time"><option value="">Select</option><option>30–60 minutes</option><option>1–2 hours</option><option>2+ hours</option></select>
+      <p class="err" id="err"></p>
+      <button class="btn" id="subBtn" type="submit" style="width:100%;margin-top:18px">Book My Call</button>
+      <p class="note" style="text-align:center">🔒 Your details are private. No spam.</p>
+    </form>
+  </div>
+</div>
+
+<!-- THANK YOU MODAL -->
+<div class="ov" id="thankOv" role="dialog" aria-modal="true" aria-labelledby="tTitle">
+  <div class="modal thanks">
+    <button class="x" data-close aria-label="Close">×</button>
+    <div class="tick">✓</div>
+    <h2 id="tTitle">Thank you, <span id="tName"></span>!</h2>
+    <p style="color:var(--muted)">We've received your details.</p>
+    <ul>
+      <li>📞 Our expert will call you within 24 hours.</li>
+      <li>📱 Please keep your phone nearby.</li>
+      <li>🕘 We'll fit the call around your day.</li>
+    </ul>
+    <button class="btn" data-close style="width:100%">Got it</button>
+  </div>
+</div>
+
+<!-- PRIVACY MODAL -->
+<div class="ov" id="privOv" role="dialog" aria-modal="true" aria-labelledby="pTitle">
+  <div class="modal pp">
+    <button class="x" data-close aria-label="Close">×</button>
+    <h2 id="pTitle">Privacy Policy</h2>
+    <p class="note" style="margin-top:0">Last updated: 2025</p>
+    <h3>1. Information we collect</h3>
+    <p>What you enter in the form: name, mobile number, age, profile type and available time. Technical data such as device, browser and ad source (UTM) may also be recorded automatically.</p>
+    <h3>2. How we use it</h3>
+    <ul><li>To contact you by call or WhatsApp</li><li>To share information about our program</li><li>To improve our service and advertising</li></ul>
+    <h3>3. Tracking and cookies</h3>
+    <p>We use Meta Pixel, which measures activity such as page visits and form submissions so we can show relevant ads. You can control this through your browser or Facebook ad settings.</p>
+    <h3>4. Data sharing</h3>
+    <p>We do not sell your data. It is shared only with our team and necessary service providers (such as Google Sheets and Meta), solely for the purposes above.</p>
+    <h3>5. Data security</h3>
+    <p>We take reasonable steps to protect your data, but no system on the internet is 100% secure.</p>
+    <h3>6. Eligibility</h3>
+    <p>This program is for girls and women aged 18 and above. We do not knowingly collect data from anyone under 18.</p>
+    <h3>7. Your rights</h3>
+    <p>You may ask to view, correct or delete your data. Tell us on the call or contact us on the number you were called from.</p>
+    <h3>8. Consent</h3>
+    <p>By submitting the form, you agree to these terms and consent to being contacted by call or WhatsApp.</p>
+    <h3>9. Disclaimer</h3>
+    <p>No income is guaranteed. Results depend on your effort, skills and consistency.</p>
+  </div>
+</div>
+
+<script>
+const SCRIPT_URL="https://script.google.com/macros/s/AKfycbyAT8SD0oE7siht88_vRfafTmKhV3oJy_0C76oUFuchNNmBmJvZvrbQgSh9X30iGc8grQ/exec";
+const $=id=>document.getElementById(id);
+const formOv=$('formOv'),thankOv=$('thankOv'),privOv=$('privOv'),form=$('leadForm'),err=$('err'),btn=$('subBtn');
+let source='Website',submitting=false,formOpened=false;
+
+const qs=new URLSearchParams(location.search);
+const utm=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].map(k=>qs.get(k)||'').join(' | ');
+
+function show(o){o.classList.add('show');document.body.style.overflow='hidden'}
+function hide(o){o.classList.remove('show');if(!document.querySelector('.ov.show'))document.body.style.overflow=''}
+function hideAll(){[formOv,thankOv,privOv].forEach(hide)}
+
+document.querySelectorAll('.open-form').forEach(b=>b.addEventListener('click',()=>{
+  source=b.dataset.source||'Website';
+  if(b.dataset.profile)$('f_job').value=b.dataset.profile;
+  show(formOv);
+  if(!formOpened){formOpened=true;if(window.fbq)fbq('track','InitiateCheckout')}
+  setTimeout(()=>$('f_name').focus(),100);
+}));
+$('openPrivacy').addEventListener('click',()=>show(privOv));
+document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',e=>hide(e.target.closest('.ov'))));
+document.querySelectorAll('.ov').forEach(o=>o.addEventListener('click',e=>{if(e.target===o)hide(o)}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')hideAll()});
+
+form.addEventListener('submit',e=>{
+  e.preventDefault();
+  if(submitting)return;
+  const v={name:$('f_name').value.trim(),phone:$('f_phone').value.replace(/\D/g,''),age:$('f_age').value,
+    profession:$('f_job').value,time:$('f_time').value};
+  let m='';
+  if(v.name.length<2)m='Please enter your name.';
+  else if(!/^[6-9]\d{9}$/.test(v.phone))m='Enter a valid 10-digit mobile number.';
+  else if(!v.age||v.age<18||v.age>65)m='This program is for ages 18 to 65.';
+  else if(!v.profession||!v.time)m='Please select all options.';
+  if(m){err.textContent=m;err.style.display='block';return}
+  err.style.display='none';
+  submitting=true;btn.disabled=true;btn.textContent='Sending...';
+
+  const fd=new FormData();
+  Object.entries(v).forEach(([k,val])=>fd.append(k,val));
+  fd.append('gender','Female');
+  fd.append('segment','Girls Only');
+  fd.append('source',source);
+  fd.append('utm',utm);
+  fd.append('page',location.href);
+  fd.append('timestamp',new Date().toISOString());
+  fetch(SCRIPT_URL,{method:'POST',body:fd,mode:'no-cors'}).catch(()=>{});
+
+  if(window.fbq){fbq('track','Lead',{content_name:'Girls Guidance Call',content_category:v.profession});fbq('track','CompleteRegistration')}
+
+  $('tName').textContent=v.name.split(' ')[0];
+  setTimeout(()=>{
+    hide(formOv);show(thankOv);form.reset();
+    submitting=false;btn.disabled=false;btn.textContent='Book My Call';
+  },600);
+});
+</script>
+</body>
+</html>
